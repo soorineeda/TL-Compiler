@@ -1,0 +1,46 @@
+digraph graphviz {
+node [shape = none];
+edge [tailport = s];
+entry
+subgraph cluster {
+color="/x11/white"
+B1 [fillcolor="/x11/white",shape=box, label = <B1<br/>
+# loadI 0 =&gt; r_LAST<br/>
+# loadI 0 =&gt; r_NEXTTOLAST<br/>
+# loadI 0 =&gt; r_LIMIT<br/>
+# loadI 0 =&gt; r_FIB<br/>
+# readInt  =&gt; r_LIMIT<br/>
+# loadI 1 =&gt; r2<br/>
+# i2i r2 =&gt; r_LAST<br/>
+# loadI 0 =&gt; r2<br/>
+# i2i r2 =&gt; r_NEXTTOLAST<br/>
+# loadI 1 =&gt; r2<br/>
+# i2i r2 =&gt; r_FIB<br/>
+# loadI 0 =&gt; r1<br/>
+# writeInt r1<br/>
+# jumpI =&gt; B2<br/>
+>]
+B1->B2
+B2 [fillcolor="/x11/white",shape=box, label = <B2<br/>
+# sle r_FIB&#44; r_LIMIT =&gt; r1<br/>
+# cbr r1 -&gt; B3, B4<br/>
+>]
+B2->B3
+B3->B2
+B2->B4
+B3 [fillcolor="/x11/white",shape=box, label = <B3<br/>
+# writeInt r_FIB<br/>
+# add r_LAST&#44; r_NEXTTOLAST =&gt; r2<br/>
+# i2i r2 =&gt; r_FIB<br/>
+# i2i r_LAST =&gt; r_NEXTTOLAST<br/>
+# i2i r_FIB =&gt; r_LAST<br/>
+# jumpI =&gt; B2<br/>
+>]
+B4 [fillcolor="/x11/white",shape=box, label = <B4<br/>
+# exit <br/>
+>]
+entry -> B1
+B4 -> exit
+
+}
+}

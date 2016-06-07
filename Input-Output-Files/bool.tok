@@ -1,0 +1,12 @@
+PROGRAM
+VAR
+ident(X)
+AS
+BOOL
+SC
+BEGIN
+ident(X)
+ASGN
+num(2)
+SC
+END

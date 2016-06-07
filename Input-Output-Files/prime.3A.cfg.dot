@@ -1,0 +1,108 @@
+digraph graphviz {
+node [shape = none];
+edge [tailport = s];
+entry
+subgraph cluster {
+color="/x11/white"
+B1 [fillcolor="/x11/white",shape=box, label = <B1<br/>
+# loadI 0 =&gt; r_INPUT<br/>
+# loadI 0 =&gt; r_ISPRIME<br/>
+# loadI 0 =&gt; r_DIVISOR<br/>
+# readInt  =&gt; r_INPUT<br/>
+# loadI 1 =&gt; r2<br/>
+# i2i r2 =&gt; r_ISPRIME<br/>
+# jumpI =&gt; B2<br/>
+>]
+B1->B2
+B2 [fillcolor="/x11/white",shape=box, label = <B2<br/>
+# jumpI =&gt; B2<br/>
+# loadI 2 =&gt; r2<br/>
+# slt r_INPUT&#44; r2 =&gt; r1<br/>
+# cbr r1 -&gt; B3, B4
+>]
+B2->B3
+B2->B4
+B3->B5
+B4->B5
+B3 [fillcolor="/x11/white",shape=box, label = <B3<br/>
+# loadI 0 =&gt; r2<br/>
+# i2i r2 =&gt; r_ISPRIME<br/>
+# jumpI =&gt; B5<br/>
+>]
+B4 [fillcolor="/x11/white",shape=box, label = <B4<br/>
+# loadI 1 =&gt; r2<br/>
+# sub r_INPUT&#44; r2 =&gt; r2<br/>
+# i2i r2 =&gt; r_DIVISOR<br/>
+# jumpI =&gt; B6<br/>
+>]
+B5->B6
+B6 [fillcolor="/x11/white",shape=box, label = <B6<br/>
+# loadI 2 =&gt; r2<br/>
+# sge r_DIVISOR&#44; r2 =&gt; r1<br/>
+# cbr r1 -&gt; B7, B8<br/>
+>]
+B6->B7
+B7->B6
+B6->B8
+B7 [fillcolor="/x11/white",shape=box, label = <B7<br/>
+# jumpI =&gt; B9<br/>
+>]
+B8->B9
+B9 [fillcolor="/x11/white",shape=box, label = <B9<br/>
+# jumpI =&gt; B9<br/>
+# rem r_INPUT&#44; r_DIVISOR =&gt; r1<br/>
+# loadI 0 =&gt; r2<br/>
+# seq r_r1&#44; r2 =&gt; r1<br/>
+# cbr r1 -&gt; B10, B11
+>]
+B9->B10
+B9->B11
+B10->B12
+B11->B12
+B10 [fillcolor="/x11/white",shape=box, label = <B10<br/>
+# loadI 0 =&gt; r2<br/>
+# i2i r2 =&gt; r_ISPRIME<br/>
+# jumpI =&gt; B12<br/>
+>]
+B11 [fillcolor="/x11/white",shape=box, label = <B11<br/>
+# jumpI =&gt; B12<br/>
+>]
+B12 [fillcolor="/x11/white",shape=box, label = <B12<br/>
+# loadI 1 =&gt; r2<br/>
+# sub r_DIVISOR&#44; r2 =&gt; r2<br/>
+# i2i r2 =&gt; r_DIVISOR<br/>
+# jumpI =&gt; B6<br/>
+>]
+B8 [fillcolor="/x11/white",shape=box, label = <B8<br/>
+# jumpI =&gt; B5<br/>
+>]
+B5 [fillcolor="/x11/white",shape=box, label = <B5<br/>
+# jumpI =&gt; B13<br/>
+>]
+B12->B13
+B13 [fillcolor="/x11/white",shape=box, label = <B13<br/>
+# jumpI =&gt; B13<br/>
+# cbr r1 -&gt; B14, B15
+>]
+B13->B14
+B13->B15
+B14->B16
+B15->B16
+B14 [fillcolor="/x11/white",shape=box, label = <B14<br/>
+# loadI 1 =&gt; r1<br/>
+# writeInt r1<br/>
+# jumpI =&gt; B16<br/>
+>]
+B15 [fillcolor="/x11/white",shape=box, label = <B15<br/>
+# loadI 0 =&gt; r1<br/>
+# writeInt r1<br/>
+# jumpI =&gt; B16<br/>
+>]
+B16 [fillcolor="/x11/white",shape=box, label = <B16<br/>
+# exit <br/>
+>]
+entry -> B1
+B16 -> exit
+
+}
+}

@@ -1,0 +1,19 @@
+digraph graphviz {
+node [shape = none];
+edge [tailport = s];
+entry
+subgraph cluster {
+color="/x11/white"
+B1 [fillcolor="/x11/white",shape=box, label = <B1<br/>
+# loadI 0 =&gt; r_X<br/>
+# readInt  =&gt; r_X<br/>
+# loadI 2 =&gt; r1<br/>
+# mul r1&#44; r_X =&gt; r1<br/>
+# writeInt r1<br/>
+# exit <br/>
+>]
+entry -> B1
+B1 -> exit
+
+}
+}

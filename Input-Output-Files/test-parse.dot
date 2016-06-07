@@ -1,0 +1,276 @@
+digraph tl12Ast {
+ordering=out;
+node [shape = box, style = filled, fillcolor="white"]
+n1 [label="<program>",fillcolor="/x11/lightgrey",shape=box]
+n2 [label="PROGRAM:null",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n2
+n3 [label="<declarations>",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n3
+n4 [label="VAR:null",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n4
+n5 [label="ident:X",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n5
+n6 [label="AS:null",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n6
+n7 [label="<type>",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n7
+n8 [label="INT:null",fillcolor="/x11/lightgrey",shape=box]
+n7 -> n8
+n9 [label="SC:null",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n9
+n10 [label="<declarations>",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n10
+n11 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n10 -> n11
+n12 [label="BEGIN:null",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n12
+n13 [label="<statementSequence>",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n13
+n14 [label="<statement>",fillcolor="/x11/lightgrey",shape=box]
+n13 -> n14
+n15 [label="<assignment>",fillcolor="/x11/lightgrey",shape=box]
+n14 -> n15
+n16 [label="ident:X",fillcolor="/x11/lightgrey",shape=box]
+n15 -> n16
+n17 [label="ASGN:null",fillcolor="/x11/lightgrey",shape=box]
+n15 -> n17
+n18 [label="<assignment2>",fillcolor="/x11/lightgrey",shape=box]
+n15 -> n18
+n19 [label="<expression>",fillcolor="/x11/lightgrey",shape=box]
+n18 -> n19
+n20 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n19 -> n20
+n21 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n20 -> n21
+n22 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n21 -> n22
+n23 [label="num:10",fillcolor="/x11/lightgrey",shape=box]
+n22 -> n23
+n24 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n21 -> n24
+n25 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n24 -> n25
+n26 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n20 -> n26
+n27 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n26 -> n27
+n28 [label="<expression2>",fillcolor="/x11/lightgrey",shape=box]
+n19 -> n28
+n29 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n28 -> n29
+n30 [label="SC:null",fillcolor="/x11/lightgrey",shape=box]
+n13 -> n30
+n31 [label="<statementSequence>",fillcolor="/x11/lightgrey",shape=box]
+n13 -> n31
+n32 [label="<statement>",fillcolor="/x11/lightgrey",shape=box]
+n31 -> n32
+n33 [label="<assignment>",fillcolor="/x11/lightgrey",shape=box]
+n32 -> n33
+n34 [label="ident:X",fillcolor="/x11/lightgrey",shape=box]
+n33 -> n34
+n35 [label="ASGN:null",fillcolor="/x11/lightgrey",shape=box]
+n33 -> n35
+n36 [label="<assignment2>",fillcolor="/x11/lightgrey",shape=box]
+n33 -> n36
+n37 [label="<expression>",fillcolor="/x11/lightgrey",shape=box]
+n36 -> n37
+n38 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n37 -> n38
+n39 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n38 -> n39
+n40 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n39 -> n40
+n41 [label="boollit:true",fillcolor="/x11/lightgrey",shape=box]
+n40 -> n41
+n42 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n39 -> n42
+n43 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n42 -> n43
+n44 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n38 -> n44
+n45 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n44 -> n45
+n46 [label="<expression2>",fillcolor="/x11/lightgrey",shape=box]
+n37 -> n46
+n47 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n46 -> n47
+n48 [label="SC:null",fillcolor="/x11/lightgrey",shape=box]
+n31 -> n48
+n49 [label="<statementSequence>",fillcolor="/x11/lightgrey",shape=box]
+n31 -> n49
+n50 [label="<statement>",fillcolor="/x11/lightgrey",shape=box]
+n49 -> n50
+n51 [label="<assignment>",fillcolor="/x11/lightgrey",shape=box]
+n50 -> n51
+n52 [label="ident:X",fillcolor="/x11/lightgrey",shape=box]
+n51 -> n52
+n53 [label="ASGN:null",fillcolor="/x11/lightgrey",shape=box]
+n51 -> n53
+n54 [label="<assignment2>",fillcolor="/x11/lightgrey",shape=box]
+n51 -> n54
+n55 [label="<expression>",fillcolor="/x11/lightgrey",shape=box]
+n54 -> n55
+n56 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n55 -> n56
+n57 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n56 -> n57
+n58 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n57 -> n58
+n59 [label="LP:null",fillcolor="/x11/lightgrey",shape=box]
+n58 -> n59
+n60 [label="<expression>",fillcolor="/x11/lightgrey",shape=box]
+n58 -> n60
+n61 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n60 -> n61
+n62 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n61 -> n62
+n63 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n62 -> n63
+n64 [label="num:2",fillcolor="/x11/lightgrey",shape=box]
+n63 -> n64
+n65 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n62 -> n65
+n66 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n65 -> n66
+n67 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n61 -> n67
+n68 [label="ADDITIVE:+",fillcolor="/x11/lightgrey",shape=box]
+n67 -> n68
+n69 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n67 -> n69
+n70 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n69 -> n70
+n71 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n70 -> n71
+n72 [label="LP:null",fillcolor="/x11/lightgrey",shape=box]
+n71 -> n72
+n73 [label="<expression>",fillcolor="/x11/lightgrey",shape=box]
+n71 -> n73
+n74 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n73 -> n74
+n75 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n74 -> n75
+n76 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n75 -> n76
+n77 [label="ident:X",fillcolor="/x11/lightgrey",shape=box]
+n76 -> n77
+n78 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n75 -> n78
+n79 [label="MULTIPLICATIVE:*",fillcolor="/x11/lightgrey",shape=box]
+n78 -> n79
+n80 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n78 -> n80
+n81 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n80 -> n81
+n82 [label="num:6",fillcolor="/x11/lightgrey",shape=box]
+n81 -> n82
+n83 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n80 -> n83
+n84 [label="MULTIPLICATIVE:div",fillcolor="/x11/lightgrey",shape=box]
+n83 -> n84
+n85 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n83 -> n85
+n86 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n85 -> n86
+n87 [label="LP:null",fillcolor="/x11/lightgrey",shape=box]
+n86 -> n87
+n88 [label="<expression>",fillcolor="/x11/lightgrey",shape=box]
+n86 -> n88
+n89 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n88 -> n89
+n90 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n89 -> n90
+n91 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n90 -> n91
+n92 [label="ident:X",fillcolor="/x11/lightgrey",shape=box]
+n91 -> n92
+n93 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n90 -> n93
+n94 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n93 -> n94
+n95 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n89 -> n95
+n96 [label="ADDITIVE:-",fillcolor="/x11/lightgrey",shape=box]
+n95 -> n96
+n97 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n95 -> n97
+n98 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n97 -> n98
+n99 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n98 -> n99
+n100 [label="num:2",fillcolor="/x11/lightgrey",shape=box]
+n99 -> n100
+n101 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n98 -> n101
+n102 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n101 -> n102
+n103 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n97 -> n103
+n104 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n103 -> n104
+n105 [label="<expression2>",fillcolor="/x11/lightgrey",shape=box]
+n88 -> n105
+n106 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n105 -> n106
+n107 [label="RP:null",fillcolor="/x11/lightgrey",shape=box]
+n86 -> n107
+n108 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n85 -> n108
+n109 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n108 -> n109
+n110 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n74 -> n110
+n111 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n110 -> n111
+n112 [label="<expression2>",fillcolor="/x11/lightgrey",shape=box]
+n73 -> n112
+n113 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n112 -> n113
+n114 [label="RP:null",fillcolor="/x11/lightgrey",shape=box]
+n71 -> n114
+n115 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n70 -> n115
+n116 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n115 -> n116
+n117 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n69 -> n117
+n118 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n117 -> n118
+n119 [label="<expression2>",fillcolor="/x11/lightgrey",shape=box]
+n60 -> n119
+n120 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n119 -> n120
+n121 [label="RP:null",fillcolor="/x11/lightgrey",shape=box]
+n58 -> n121
+n122 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n57 -> n122
+n123 [label="MULTIPLICATIVE:mod",fillcolor="/x11/lightgrey",shape=box]
+n122 -> n123
+n124 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n122 -> n124
+n125 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n124 -> n125
+n126 [label="num:4",fillcolor="/x11/lightgrey",shape=box]
+n125 -> n126
+n127 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n124 -> n127
+n128 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n127 -> n128
+n129 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n56 -> n129
+n130 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n129 -> n130
+n131 [label="<expression2>",fillcolor="/x11/lightgrey",shape=box]
+n55 -> n131
+n132 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n131 -> n132
+n133 [label="SC:null",fillcolor="/x11/lightgrey",shape=box]
+n49 -> n133
+n134 [label="<statementSequence>",fillcolor="/x11/lightgrey",shape=box]
+n49 -> n134
+n135 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n134 -> n135
+n136 [label="END:null",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n136
+
+}

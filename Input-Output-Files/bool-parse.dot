@@ -1,0 +1,70 @@
+digraph tl12Ast {
+ordering=out;
+node [shape = box, style = filled, fillcolor="white"]
+n1 [label="<program>",fillcolor="/x11/lightgrey",shape=box]
+n2 [label="PROGRAM:null",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n2
+n3 [label="<declarations>",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n3
+n4 [label="VAR:null",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n4
+n5 [label="ident:X",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n5
+n6 [label="AS:null",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n6
+n7 [label="<type>",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n7
+n8 [label="BOOL:null",fillcolor="/x11/lightgrey",shape=box]
+n7 -> n8
+n9 [label="SC:null",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n9
+n10 [label="<declarations>",fillcolor="/x11/lightgrey",shape=box]
+n3 -> n10
+n11 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n10 -> n11
+n12 [label="BEGIN:null",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n12
+n13 [label="<statementSequence>",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n13
+n14 [label="<statement>",fillcolor="/x11/lightgrey",shape=box]
+n13 -> n14
+n15 [label="<assignment>",fillcolor="/x11/lightgrey",shape=box]
+n14 -> n15
+n16 [label="ident:X",fillcolor="/x11/lightgrey",shape=box]
+n15 -> n16
+n17 [label="ASGN:null",fillcolor="/x11/lightgrey",shape=box]
+n15 -> n17
+n18 [label="<assignment2>",fillcolor="/x11/lightgrey",shape=box]
+n15 -> n18
+n19 [label="<expression>",fillcolor="/x11/lightgrey",shape=box]
+n18 -> n19
+n20 [label="<simpleExpression>",fillcolor="/x11/lightgrey",shape=box]
+n19 -> n20
+n21 [label="<term>",fillcolor="/x11/lightgrey",shape=box]
+n20 -> n21
+n22 [label="<factor>",fillcolor="/x11/lightgrey",shape=box]
+n21 -> n22
+n23 [label="num:2",fillcolor="/x11/lightgrey",shape=box]
+n22 -> n23
+n24 [label="<term2>",fillcolor="/x11/lightgrey",shape=box]
+n21 -> n24
+n25 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n24 -> n25
+n26 [label="<simpleExpression2>",fillcolor="/x11/lightgrey",shape=box]
+n20 -> n26
+n27 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n26 -> n27
+n28 [label="<expression2>",fillcolor="/x11/lightgrey",shape=box]
+n19 -> n28
+n29 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n28 -> n29
+n30 [label="SC:null",fillcolor="/x11/lightgrey",shape=box]
+n13 -> n30
+n31 [label="<statementSequence>",fillcolor="/x11/lightgrey",shape=box]
+n13 -> n31
+n32 [label="e:null",fillcolor="/x11/lightgrey",shape=box]
+n31 -> n32
+n33 [label="END:null",fillcolor="/x11/lightgrey",shape=box]
+n1 -> n33
+
+}

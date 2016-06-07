@@ -1,0 +1,48 @@
+digraph graphviz {
+node [shape = none];
+edge [tailport = s];
+entry
+subgraph cluster {
+color="/x11/white"
+B1 [fillcolor="/x11/white",shape=box, label = <B1<br/>
+# loadI 0 =&gt; r_X<br/>
+# jumpI =&gt; B2<br/>
+>]
+B1->B2
+B2 [fillcolor="/x11/white",shape=box, label = <B2<br/>
+# loadI 10 =&gt; r2<br/>
+# sle r_X&#44; r2 =&gt; r1<br/>
+# cbr r1 -&gt; B3, B4<br/>
+>]
+B2->B3
+B3->B2
+B2->B4
+B3 [fillcolor="/x11/white",shape=box, label = <B3<br/>
+# jumpI =&gt; B5<br/>
+>]
+B4->B5
+B5 [fillcolor="/x11/white",shape=box, label = <B5<br/>
+# loadI 8 =&gt; r2<br/>
+# sge r_X&#44; r2 =&gt; r1<br/>
+# cbr r1 -&gt; B6, B7<br/>
+>]
+B5->B6
+B6->B5
+B5->B7
+B6 [fillcolor="/x11/white",shape=box, label = <B6<br/>
+# loadI 2 =&gt; r2<br/>
+# add r_X&#44; r2 =&gt; r2<br/>
+# i2i r2 =&gt; r_X<br/>
+# jumpI =&gt; B5<br/>
+>]
+B7 [fillcolor="/x11/white",shape=box, label = <B7<br/>
+# jumpI =&gt; B2<br/>
+>]
+B4 [fillcolor="/x11/white",shape=box, label = <B4<br/>
+# exit <br/>
+>]
+entry -> B1
+B7 -> exit
+
+}
+}

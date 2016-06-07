@@ -1,0 +1,62 @@
+digraph tl12Ast {
+ordering=out;
+node [shape = box, style = filled, fillcolor="white"]
+n0[label="program"]
+n1[label="Declearations"]
+n0 -> n1
+n3[label="X:INT"]
+n1 -> n3
+n2[label="Statements"]
+n0 -> n2
+n4[label=":="]
+n2 -> n4
+n5[label="X:INT"]
+n4 -> n5
+n6[label="10:INT"]
+n4 -> n6
+n7[label=":=",fillcolor="red"]
+n2 -> n7
+n8[label="X:INT"]
+n7 -> n8
+n9[label="1:BOOL"]
+n7 -> n9
+n10[label=":="]
+n2 -> n10
+n11[label="X:INT"]
+n10 -> n11
+n12[label="mod:INT"]
+n10 -> n12
+n13[label="LP"]
+n12 -> n13
+n14[label="+:INT"]
+n12 -> n14
+n15[label="2:INT"]
+n14 -> n15
+n16[label="LP"]
+n14 -> n16
+n17[label="*:INT"]
+n14 -> n17
+n18[label="X:INT"]
+n17 -> n18
+n19[label="div:INT"]
+n17 -> n19
+n20[label="6:INT"]
+n19 -> n20
+n21[label="LP"]
+n19 -> n21
+n22[label="-:INT"]
+n19 -> n22
+n23[label="X:INT"]
+n22 -> n23
+n24[label="2:INT"]
+n22 -> n24
+n25[label="RP"]
+n19 -> n25
+n26[label="RP"]
+n14 -> n26
+n27[label="RP"]
+n12 -> n27
+n28[label="4:INT"]
+n12 -> n28
+
+}
